@@ -30,10 +30,10 @@ class Twitter {
 
     // test
 
-    http.post(tokenEndpoint, headers: {
+    http.post(tokenEndpoint, body: "grant_type=client_credentials", headers: {
       'Authorization' : 'Basic ' + secret,
       'Content-Type' : 'application/x-www-form-urlencoded;charset=UTF-8'
-    }, body: 'grant-type=client-credentials').then((response){
+    }).then((response){
       print("Response status: ${response.statusCode}");
       print("Response body: ${response.body}");
     });

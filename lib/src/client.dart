@@ -1,8 +1,8 @@
-import 'dart:async';
+/* import 'dart:async';
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:oauth/oauth.dart' as oauth;
+import 'package:oauth2/oauth2.dart' as oauth;
 
 /// A http Client extends [oauth.client]
 class Client extends oauth.Client {
@@ -14,7 +14,7 @@ class Client extends oauth.Client {
   Future<http.Response> request(String method, url,
       {Map<String, String> headers, body, Encoding encoding}) async {
     if (url is String) url = Uri.parse(url);
-
+  
     var request = new http.Request(method, url);
 
     if (headers != null) request.headers.addAll(headers);
@@ -41,3 +41,4 @@ class Client extends oauth.Client {
     client.close();
   }
 }
+ */

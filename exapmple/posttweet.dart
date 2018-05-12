@@ -13,15 +13,15 @@ main() {
       "accessToken": envVars['ACCESS_TOKEN'],
       "accessSecret": envVars['ACCESS_TOKEN_SECRET']
   };
-  Twitter twitter = new Twitter.fromMap(map);
+  Twitter twitter = new Twitter();
   
-  try {
+  /*try {
     var a = twitter.request("POST", "statuses/update.json",body: {"status":"test"});
     a.then((value){
       new File("test.json").writeAsString(value.body);
     });
   } catch(e) {
   } finally {
-  }
+  }*/
   return;
 }
